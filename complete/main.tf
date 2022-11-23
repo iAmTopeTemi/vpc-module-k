@@ -10,7 +10,7 @@ terraform {
 }
 
 module "vpc" {
-  source = "../"
+  source = "git::https://github.com/iAmTopeTemi/vpc-module-k.git"
 
   vpc_cidr = "10.0.0.0/16"
   public_cidr = ["10.0.0.0/24", "10.0.2.0/24", "10.0.4.0/24"]

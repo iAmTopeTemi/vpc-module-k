@@ -135,3 +135,7 @@ resource "aws_default_route_table" "default_rt" {
     Name = "defaultRT"
   }
 }
+
+#to create versions, we have to tag
+#git tag v1.0.0
+#use git push origin v1.0.0 (tagname/number)
