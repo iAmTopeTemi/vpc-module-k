@@ -4,7 +4,7 @@
 ```hcl
 
     module "vpc" {
-      source = "git::https://github.com/iAmTopeTemi/vpc-module-k.git"
+      source = "git::https://github.com/iAmTopeTemi/vpc-module-k.git?ref=v1.0.0"
     
       vpc_cidr = "10.0.0.0/16"
       public_cidr = ["10.0.0.0/24", "10.0.2.0/24", "10.0.4.0/24"]
