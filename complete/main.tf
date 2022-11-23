@@ -17,6 +17,6 @@ module "vpc" {
   private_cidr = ["10.0.1.0/24", "10.0.3.0/24"]
   database_cidr = ["10.0.51.0/24", "10.0.55.0/24"]
   vpc_tags = {
-    Name = Module_vpc
+    Name = "prod_vpc"
   }
 }
