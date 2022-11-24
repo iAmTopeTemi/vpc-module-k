@@ -5,7 +5,7 @@ terraform {
 
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "~> 4.0"
     }
   }
@@ -26,7 +26,7 @@ resource "aws_vpc" "three_tier_archi" {
   cidr_block           = var.vpc_cidr
   enable_dns_hostnames = true
   enable_dns_support   = true
-  tags = var.vpc_tags
+  tags                 = var.vpc_tags
 }
 
 ##creating igw
