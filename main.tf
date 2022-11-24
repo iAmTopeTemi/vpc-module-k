@@ -109,7 +109,7 @@ resource "aws_eip" "eip_for_three_tier" {
 
 resource "aws_nat_gateway" "nat_gw_for_three_tier" {
   allocation_id = aws_eip.eip_for_three_tier.id
-  subnet_id     = aws_subnet.public_subnet[0].id #to create in only on subnet
+  subnet_id     = aws_subnet.public_subnet[0].id #to create in only one subnet
 
   tags = {
     Name = "gw NAT"
